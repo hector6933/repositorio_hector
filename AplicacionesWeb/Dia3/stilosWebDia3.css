@@ -1,0 +1,29 @@
+body{
+
+    background-color: black;
+    
+}
+
+h1, h2, h3{
+
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+
+    color: white;
+
+}
+
+blockquote {
+
+    color: white;
+
+}
+
+address {
+
+    color: white;
+
+}

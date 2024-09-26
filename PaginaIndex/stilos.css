@@ -1,0 +1,33 @@
+body {
+
+    background-color: black;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+    text-align: center;
+    color: white;
+
+}
+
+p {
+
+    color: rgb(255, 0, 0);
+    
+}
+
+label {
+
+    color: white;
+
+}
+
+button {
+
+    background-color: greenyellow;
+    border-color: greenyellow;
+    border-radius: 10px;
+    border-width: 9px;
+
+}
