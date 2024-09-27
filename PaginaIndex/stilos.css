@@ -25,9 +25,9 @@ label {
 
 button {
 
-    background-color: greenyellow;
-    border-color: greenyellow;
+    background-color: blue;
+    border-color: blue;
     border-radius: 10px;
-    border-width: 9px;
-
+    border-width: 6px;
+    color: white;
 }

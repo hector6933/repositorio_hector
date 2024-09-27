@@ -1,0 +1,23 @@
+body {
+
+    background-color: black;
+
+}
+
+h1, h2 {
+
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+
+    color: white;
+
+}
+
+span {
+
+    color: greenyellow;
+
+}
