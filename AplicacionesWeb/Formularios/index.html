@@ -3,15 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
     <title>Formularios</title>
 </head>
 <body>
     
     <h1>Formularios en HTML</h1>
     <form>
-        
+        <fieldset>
+            <legend style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Formulario Epico</legend>
+        <label for="inputNombre">- Nombre:  </label>     <input id="inputNombre" name="nombrePrincipal" placeholder="Escribe tu nombre"><br>
+        <br>
+        <label>- Color favorito: </label><input type="color" value="" id="escogerColor" style="border-color: black; color: black;"><br>
+        <br>
+        <label>- Cuanto de racista eres: </label> <br><p style="font-size: smaller; color: red;"> Nada racista</p><input type="range"><p style="font-size: smaller; color: red;">Muy racista</p>
+        <br><br>
 
+        <p>
 
+            <label for="Correo">- Correo electrónico:</label>
+            <input type="email" id="Correo" name="MailInput" placeholder="E-mail">
+
+        </p>
+        <br><br>
+        <p>
+
+            <label for="passwd">- Contraseña:</label>
+            <input type="password" id="passwd" name="contrasena" placeholder="Escribe la contraseña">
+
+        </p>
+        <br><br>
+        <p>
+
+            <input type="submit" value="Enviar Formulario">
+            <input type="reset" value="Borrar todos los datos">
+
+        </p>
+    </fieldset>
     </form>
 </body>
 </html>

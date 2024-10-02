@@ -1,0 +1,24 @@
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color: rgb(166, 255, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+label {
+
+    color: white;
+
+}
+
+p {
+
+    display: inline;
+    color: white;
+}
+
