@@ -1,0 +1,31 @@
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color: rgb(255, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+table, th, td {
+
+    border: 1px solid white;
+    border-collapse: collapse;
+    
+}
+
+
+td {
+
+    color: white;
+    text-align: center;
+}
+
+th {
+
+    color: rgb(255, 208, 0);
+
+}
