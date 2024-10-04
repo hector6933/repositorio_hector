@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <link rel="stylesheet" href="stilos.css">
+    <link rel="stylesheet" href="stilos2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi pagina to guapa colega</title>
@@ -18,21 +19,39 @@
     <p>hola que tal, jaja.</p>
     <p>Pablo ha estado aqui, <span style="color: blueviolet; font-family: 'Courier New', Courier, monospace;">epico</span></p>
     <a href="http://moodle.iesch.org/my/" target="_blank" style="color: aqua;">Ir a moodle</a><br><br>
-    <a href="../AplicacionesWeb/Tablas/index2.html"><button style="background-color: rgb(255, 145, 0); border-color: rgb(255, 145, 0); color: rgb(255, 255, 255); font-family:Georgia, 'Times New Roman', Times, serif; font-size: 30px;"><b>Horario</b></button></a>
+    <a href="../AplicacionesWeb/Tablas/index2.html"><button style="background-color: rgb(255, 145, 0); border-color: rgb(255, 145, 0); color: rgb(255, 255, 255); font-family:Georgia, 'Times New Roman', Times, serif; font-size: 30px;" class="botonChulo"><b>Horario</b></button></a>
     <h1 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif;">- Aplicaciones Web:</h1>
     
-    <a href="../AplicacionesWeb/apWebIndex.html"><button type="button">Ir a Aplicaciones Web</button></a><br>
+    <a href="../AplicacionesWeb/apWebIndex.html"><button type="button" class="botonChulo">Ir a Aplicaciones Web</button></a><br>
     
     <img src="media/imagenes/diabetes.png" alt="imagen to guapa" height="150px">
     <img src="media/imagenes/bola_amarilla-removebg-preview.png" alt="Imagen de bola amarilla" style="height: 100px;">
 
     <h1 style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif;">- Como usar GitHub:</h1>
-    <a href="../AplicacionesWeb/usoGithub/index.html"><button type="button">Tutorial Github</button></a>
-    
+    <a href="../AplicacionesWeb/usoGithub/index.html"><button type="button" class="botonChulo">Tutorial Github</button></a>
 <!-- <p>hola hola hola hola hola hola hola hola hola hola hola hola hola hola hola</p>-->
-    <center><a href="formulario/formulario.html"><button class="button-73" role="button">Formulario</button></a></center>
+<div class="buttons">
+    <a href="formulario/formulario.html"><button class="blob-btn">
+      Formulario
+      <span class="blob-btn__inner">
+        <span class="blob-btn__blobs">
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+          <span class="blob-btn__blob"></span>
+        </span>
+      </span>
+    </button></a>
+    <br/>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+        <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+      </filter>
+    </defs>
+  </svg>
     
-    <br>
-    <p style="font-size: 10px; color: rgb(58, 58, 58); text-align: right;">Todos los derechos reservados ©</p>
 </body>
 </html>
