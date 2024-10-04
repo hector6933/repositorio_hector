@@ -1,0 +1,49 @@
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color: rgb(21, 255, 0);
+    text-align: center;
+
+}
+
+p {
+
+    color: white;
+
+}
+
+label {
+
+    color: white;
+    
+}
+
+button {
+
+    background-color: blue;
+    border-color: blue;
+    border-radius: 10px;
+    border-width: 6px;
+    color: white;
+}
+
+legend {
+
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    
+}
+
+fieldset {
+
+    margin: 0 auto;
+    text-align: left;
+
+}
+

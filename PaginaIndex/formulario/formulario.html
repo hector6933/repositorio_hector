@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos.css">
+    <title>Formulario</title>
+</head>
+<body> 
+
+    <h1>Formulario de Verdad</h1>
+
+    <form id="form" class="container m-4 pl-4" method="POST">
+        <fieldset style="width: 30%;">
+            <legend >Datos personales</legend><br>
+
+        <label for="nom">- Nombre: </label> <input id="nom" name="Nombre" type="text" maxlength="10"><br><br>
+        <label for="apellidos">- Apellidos: </label> <input type="text" id="apellidos" name="Apellidos" maxlength="30"> <br>
+        <p title="Hola xD">- Sexo:</p>
+        <input type="radio" id="rad1" name="Sexo" value="Hombre"> <label for="rad1">Hombre</label> <br><br>
+        <input type="radio" id="rad2" name="Sexo" value="Mujer"> <label for="rad2">Mujer</label> <br><br>
+        <input type="radio" id="rad3" name="Sexo" value="Radiador"> <label for="rad3">Radiador</label> <br><br>
+        <label for="pob">- Poblacion: </label><input type="text" id="pob" name="Poblacion" placeholder="Ciudad de residencia" maxlength="15"> <br><br>
+        <label for="mail">- Correo Electrónico: </label> <input type="email" id="mail" name="Correo Electronico" placeholder="Email"><br><br>
+        </fieldset>
+        <br><br>
+        <fieldset style="width: 40%;">
+            <legend>Informacion adicional</legend>
+            <label for="fechaNac">- Fecha de nacimiento: </label><input type="date" id="fechaNac" name="Fecha de nacimiento"> <br><br>
+            <label for="color">- Color Favorito: </label><input type="color" id="color" name="Color Favorito"> <br><br>
+            <label for="passwd">- En un hipotético caso, que contraseña le pondrias a todas tus cuentas 🤔: </label> <input type="password" id="passwd" name="Contrasena"> <br><br>
+            <label for="cosaFav">- Cosa favorita en general: </label><input type="text" id="cosaFav" name="Cosa favorita"> <br><br>
+            <label for="asigFav">- Mejor asignatura: </label>
+            <select id="asigFav" name="Mejor asignatura">
+
+                <option value="SOR 😃">Sistemas Operativos en Red 😃 (SOR)</option>
+                <option value="Seguridad Informática 😣">Seguridad Informática 😣 (SI)</option>
+                <option value="Aplicaciones Web 😍">Aplicaciones Web 😍 (AWEB)</option>
+                <option value="Inglés 😁">Inglés 😁 (LEP)</option>
+                <option value="Empresa 😒">Empresa e Iniciativa Emprendedora 😒 (EIE)</option>
+
+            </select>
+        </fieldset>
+        <br>
+        <div class="field is-grouped">
+          <div class="control">
+            <center><button class="button is-primary" type="submit" id="submit-button">
+              Enviar
+            </button></center>
+          </div>
+          <br>
+          <div class="control">
+            <center><button type="reset">Borrar</button></center>
+          </div>
+        </div>
+      </form> 
+      <div
+        id="message"
+        style="
+          display: none;
+          margin: 20px;
+          font-weight: bold;
+          color: rgb(238, 255, 0);
+          padding: 8px;
+          background-color: rgb(0, 4, 255);
+          border-radius: 4px;
+          border-color: aquamarine;
+          text-align: center;
+        "
+      ></div>
+  
+      <script>
+        document.getElementById("form").addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent the default form submission
+          document.getElementById("message").textContent = "Enviando..";
+          document.getElementById("message").style.display = "block";
+          document.getElementById("submit-button").disabled = true;
+  
+          // Collect the form data
+          var formData = new FormData(this);
+          var keyValuePairs = [];
+          for (var pair of formData.entries()) {
+            keyValuePairs.push(pair[0] + "=" + pair[1]);
+          }
+  
+          var formDataString = keyValuePairs.join("&");
+  
+          // Send a POST request to your Google Apps Script
+          fetch(
+            "https://script.google.com/macros/s/AKfycbxMb3VAr9F6uTQt48LonnVR8APQhvGsIQDjEewTH-czz55_SJhybWnFv4wZdoifpCGR8w/exec",
+            {
+              redirect: "follow",
+              method: "POST",
+              body: formDataString,
+              headers: {
+                "Content-Type": "text/plain;charset=utf-8",
+              },
+            }
+          )
+            .then(function (response) {
+              // Check if the request was successful
+              if (response) {
+                return response; // Assuming your script returns JSON response
+              } else {
+                throw new Error("Fallo al enviar el formulario.");
+              }
+            })
+            .then(function (data) {
+              // Display a success message
+              document.getElementById("message").textContent =
+                "Datos registrados correctamente !!!";
+              document.getElementById("message").style.display = "block";
+              document.getElementById("message").style.backgroundColor = "blue";
+              document.getElementById("message").style.color = "yellow";
+              document.getElementById("submit-button").disabled = false;
+              document.getElementById("form").reset();
+  
+              setTimeout(function () {
+                document.getElementById("message").textContent = "";
+                document.getElementById("message").style.display = "none";
+              }, 2600);
+            })
+            .catch(function (error) {
+              // Handle errors, you can display an error message here
+              console.error(error);
+              document.getElementById("message").textContent =
+                "Ha ocurrido un error mientras se enviaba el formulario.";
+              document.getElementById("message").style.display = "block";
+            });
+        });
+      </script>
+    <br><br><br><br><br><br><br>
+    <p style="font-size: 10px; color: gray; text-align: right;">Todos los derechos reservados ©</p>
+    
+</body>
+</html>

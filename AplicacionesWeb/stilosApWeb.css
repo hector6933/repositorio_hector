@@ -11,11 +11,13 @@ h1, h2, h3{
     
 
 }
+
 p {
 
     color: white;
     display: inline;
 }
+
 button{
 
     color: white;
@@ -29,5 +31,4 @@ u {
 
     color: rgb(45, 45, 248);
     
-
 }
