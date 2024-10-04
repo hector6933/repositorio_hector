@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    
+    <h1>Formulario de registro</h1>
+
+    <form>
+
+        <label for="nom">Nombre: </label><input type="text" id="nom" name="nombre"> <br><br>
+        <label for="apell">Apellidos: </label><input type="text" id="apell" name="apellidos"> <br><br>
+        Sexo: <input type="radio" name="sexo" id="hom"> <label for="hom">Hombre</label> <input type="radio" name="sexo" id="muj"> <label for="muj">Mujer</label>
+        <br><br>
+        <label for="mail">Correo: </label><input type="email" id="mail" name="Correo"> <br><br>
+        <label for="poblacion">Población:</label>
+        <select name="poblacion" id="poblacion">
+
+            <option value="Alicante">Alicante</option>
+            <option value="Barcelona">Barcelona</option>
+            <option value="Malaga">Málaga</option>
+            <option value="Guipuzcuoa">Guipúzcuoa</option>
+            <option value="Vizcaya">Vizcaya</option>
+            <option value="LaCoruña">La coruña</option>
+            <option value="Sevilla">Sevilla</option>
+            <option value="Castellon">Castellón</option>
+            <option value="Alava">Álava</option>
+            <option value="Toledo">Toledo</option>
+            <option value="Almeria">Almería</option>
+            <option value="Cadiz">Cádiz</option>
+            <option value="Girona">Girona</option>
+            <option value="Granada">Granada</option>
+            <option value="Albacete">Albacete</option>
+            <option value="Leon">León</option>
+            <option value="LasPalmas">Las Palmas</option>
+            <option value="CiudadReal">Cuidad Real</option>
+            <option value="Guadalajara">Guadalajara</option>
+            <option value="Soria">Soria</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Burgos">Burgos</option>
+            <option value="Jaen">Jaén</option>
+
+        </select>
+        <br><br>
+
+        <label for="nose">Descripción: </label><textarea cols="50" rows="5" id="nose"></textarea> <br><br>
+
+        <input type="checkbox" id="chk1" name="infoNovedadesYOferatas"> <label for="chk1">Deseo recibir información sobre novedades y ofertas</label> <br><br>
+        <input type="checkbox" id="chk2" name="TerminosYCondiciones"> <label for="chk2">Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label> <br><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+</html>

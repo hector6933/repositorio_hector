@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilos2.css">
+    <title>Más formularios</title>
+</head>
+<body>
+
+    <h1>RadioButtons en Formulario</h1>
+    <p>Para hacer Radio Buttons poner el Type=radio y el mismo name en los radiobuttons relacionados</p>
+    <form action="">
+
+        <fieldset>
+            <legend>Elige tu profesor favorito</legend>
+            <input type="radio" name="profeFavorito" id="radioButton1" value="Pascual"> <label for="radioButton1">Pascual</label><br>
+            <input type="radio" name="profeFavorito" id="radioButton2" value="Juanma"> <label for="radioButton2">Juanma</label><br>
+            <input type="radio" name="profeFavorito" id="radioButton3" value="xxx"> <label for="radioButton3">xxx</label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Elige tu asignatura favorita</legend>
+
+            <input type="radio" name="moduloFav" id="modulo1" value="AWEB"> <label for="modulo1">Aplicaciones Web</label>
+            <br>
+            <input type="radio" name="moduloFav" id="modulo2" value="Servicios en Red"> <label for="modulo2">Servicios en Red</label>
+            <br>
+            <input type="radio" name="moduloFav" id="modulo3" value="SOR"> <label for="modulo3">Sistemas Operativos en Red</label>
+            <br>
+            <input type="radio" name="moduloFav" id="modulo4" value="SI"> <label for="modulo4">Seguridad Informática</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>¿Cuales son tus preferencias en la cafeteria?</legend>
+            <input type="checkbox" name="baconqueso" id="bcqs" value="BaconQueso"> <label for="bcqs">Bocadillo de Bacon Queso</label> <br>
+            <input type="checkbox" name="PechugaMayonesa" id="Pchms" value="PechugaMayonesa"> <label for="Pchms">Bocadillo de Pechuga de Mayonesa</label> <br>
+            <input type="checkbox" name="Bravas" id="brvs" value="BocadilloBravas"> <label for="brvs">Bocadillo de Bravas</label> <br>
+            <input type="checkbox" name="lomoqueso" id="lmqs" value="LomoQueso"> <label for="lmqs">Bocadillo de Lomo con Queso</label> <br>
+        </fieldset>
+        <br>
+        <textarea rows="7" cols="30" placeholder="Escribe aqui tu comentario"></textarea>
+        <br>
+        <button type="submit" class="button_slide slide_left">Enviar formulario</button>
+    </form>
+    
+    
+    
+</body>
+</html>

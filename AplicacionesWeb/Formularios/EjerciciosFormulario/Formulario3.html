@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+    <h1>Bienvenido al registro de usuarios de nuestro foro</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Introduzca su nombre de usuario y contraseña</legend>
+
+            <label for="user">Usuario</label><input type="text" id="user" name="usuario"> <br><br>
+            <label for="passwd">Contraseña</label><input type="password" id="passwd" name="contrasena"> <label for="passwd2">Repita contraseña</label><input type="password" id="passwd2" name="contrasena2">
+
+        </fieldset>
+        <br><br>
+        <label for="txt1">Describa a continuación sus intereses:</label> <br>
+        <textarea cols="40" rows="4" id="txt1"></textarea>
+        <br><br>
+        <label for="OS">Por último seleccione el sistema operativo de su ordenador</label>
+        <select id="OS">
+
+            <option value="Linux">Linux</option>
+            <option value="Windows">Windows</option>
+            <option value="MacOs">Mac OS</option>
+
+        </select>
+        <br><br>
+
+        <label for="lol">Estoy conforme con la política de privacida de la página</label><input type="checkbox" id="lol" name="PoliticaDePrivacidad">
+        <button type="submit">Registrarme</button>
+
+    </form>
+
+</body>
+</html>
