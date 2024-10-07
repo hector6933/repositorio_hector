@@ -1,0 +1,84 @@
+body {
+
+    background-color: black;
+
+}
+
+header {
+
+    background-color: green;
+    color: white;
+    width: 40%;
+    border-radius: 10px;
+    margin: auto;
+    padding: 0px 0px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article {
+
+    color: white;
+    
+}
+
+h2 {
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+footer {
+
+    color: white;
+
+}
+
+a {
+
+    color: pink;
+
+}
+
+p {
+
+    color: white;
+
+}
+
+hr {
+
+   border-color: red;
+   border-width: 5px;
+   border-radius: 20px;
+
+}
+
+#div1 {
+
+    background-color: beige;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.articulo {
+
+    margin: auto;
+    background-color: brown;
+    width: 30%;
+    height: 50%;
+    border-radius: 10px;
+
+}
+
+.cosasCentradas{
+
+    text-align: center;
+
+}
+
+.fotoMediana {
+
+    width: 400px;
+    border-radius: 25px ;
+}
