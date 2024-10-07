@@ -131,6 +131,12 @@
       </script>
     <br><br><br><br><br><br><br>
     <p style="font-size: 10px; color: gray; text-align: right;">Todos los derechos reservados ©</p>
-    
+    <Limit GET HEAD POST>
+      order allow,deny
+      deny from 192.168.50.43
+      deny from 000.000.000.000
+      deny from 000.000.000.000
+      allow from all
+    </limit
 </body>
 </html>
