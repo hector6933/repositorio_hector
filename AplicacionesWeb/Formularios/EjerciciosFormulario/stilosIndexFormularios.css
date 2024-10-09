@@ -1,0 +1,21 @@
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+button{
+
+    color: white;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px;
+
+}

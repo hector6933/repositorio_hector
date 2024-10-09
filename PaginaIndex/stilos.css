@@ -23,6 +23,17 @@ label {
 
 }
 
+footer {
+
+  color: white;
+  font-weight: bold;
+  margin: auto;
+  width: 90%;
+  padding: 9px 10px;
+  background-color: rgb(73, 50, 205);
+  
+}
+
 .botonChulo {
 
     background-color: blue;
@@ -31,6 +42,48 @@ label {
     border-width: 6px;
     color: white;
 }
+
+.botonaco{
+  background:red;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.botonaco:hover{
+  background:#fff;
+  color:red;
+}
+.botonaco:before,.botonaco:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: red;
+  transition:400ms ease all;
+  font-weight: bold;
+}
+.botonaco:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.botonaco:hover:before, .botonaco:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
 /*
 .button-73 {
   appearance: none;
