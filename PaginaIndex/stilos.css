@@ -34,10 +34,35 @@ footer {
   
 }
 
-nav {
+.textoFooter {
 
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+
+}
+
+.pablo {
+
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  font-style: italic;
+
+}
+
+.sinsalto {
+
+  display: inline;
+
+}
+
+img {
+
+  margin-left: auto;
+  margin-right: auto;
   
-
 }
 
 .botonChulo {
