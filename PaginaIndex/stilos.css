@@ -34,6 +34,14 @@ footer {
   
 }
 
+img {
+
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
 .textoFooter {
 
   color: white;
@@ -58,11 +66,10 @@ footer {
 
 }
 
-img {
+.textopequeño {
 
-  margin-left: auto;
-  margin-right: auto;
-  
+  font-size: 15px;
+
 }
 
 .botonChulo {
