@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curso HTML 3</title>
-    <link rel="stylesheet" href="stilosWebDia3.css">
+    <link rel="stylesheet" href="css/stilosWebDia3.css">
 </head>
 <body>
 
-    <h1>Curso HTML Día 3</h1>
+    <h1>Todo lo que vemos en HTML</h1>
     <p><b style="color: red;">Negrita con "b".</b></p>
     <p><strong style="color: blue;">Negrita con "Strong".</strong></p>
     <p><i style="color: cadetblue;">Cursiva con "i".</i></p>
     <p style="color: aquamarine;"><em>Cursiva con "em".</em></p>
     <p style="color: rgb(172, 172, 10);"><u>Subrayado con "u".</u></p>
     <p>Esto es un parrafo con letra normal, <small>pero la puedo hacer pequeñita</small>, <big>pero tambien la puedo hacer grande.</big></p>
-    <hr>
+    <hr><br>
 
     <h2>Sección</h2>
     <p><del>Texto tachado con "del" </del></p>
@@ -23,7 +23,8 @@
     <p>La fórmula del agua es: H<sub>2</sub>O. Con "sub".</p>
     <p>El área del cuadrado es Lado<sup>2</sup>. Con "sup".</p>
     <p><b><i>Negrita y cursiva</i></b></p>
-    <hr>
+    <p>Con la etiqueta "span" se puede hacer un <span style="color: red; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ">corte aparte</span> en el texto</p>
+    <hr><br>
     <h2>Direcciones y citas</h2>
     <blockquote>
 
@@ -39,5 +40,143 @@
         SPAIN 
 
     </address>
+    <hr><br>
+    <h2>Imágenes</h2>    
+    <p>Para poner una imagen usaremos la etiqueta "img" y dentro de ella el atributo src="ruta",<br>
+       y para ajustar su tamaño usaremos el atributo width="200px"<br>
+       En teoría para indicar que tu imagen es un gif tienes que poner type="gif"<br>
+       En esta imagen le he puesto un "border-radius: 20px"
+    </p>
+    <img src="Media/imagenrandom.gif" style="border-radius: 20px;" width="200px"><br>
+    <hr><br>
+    <h2>Listas</h2>
+    <p>Para crear una lista ordenada usaremos la etiquta "ol" (ordered list)<br>
+       Y para crear una lista desordenada usaremos la etiqueta "ul" (unordered list)<br>
+       Cada apartado en la lista se define con "li"
+       Con el atributo "list-style" podemos cambiar el formato de los iconos que aparecen delante de cada lista.
+       Y se pueden meter "ol" y "ul" dentro de cada "li".
+    </p>
+    <p style="color: chartreuse;">- Lista ordenada (Tiene números):</p>
+    <ol >
+        <li>Lista de la compra
+            <ol >
+                <li>Verduras
+                    <ol>
+                        <li>Tomates</li>
+                        <li>Calabazas</li>
+                        <li>Pepinos</li>
+                    </ol>
+                </li>
+                <li>Embutido
+                    <ol>
+                        <li>Queso</li>
+                        <li>Jamón</li>
+                        <li>Fuet</li>
+                    </ol>
+                </li>
+                <li>Frutas
+                    <ol>
+                        <li>Fresas</li>
+                        <li>Melón</li>
+                        <li>Albaricoques</li>
+                        <li>Sandía</li>
+                        <li>Uvas</li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <p style="color: chartreuse;">- Lista desordenada (No tiene números delante):</p>
+    <ul>
+        <li>Lista de la compra
+            <ul>
+                <li>Verduras
+                    <ul>
+                        <li>Tomates</li>
+                        <li>Calabazas</li>
+                        <li>Pepinos</li>
+                    </ul>
+                </li>
+                <li>Embutido
+                    <ul>
+                        <li>Queso</li>
+                        <li>Jamón</li>
+                        <li>Fuet</li>
+                    </ul>
+                </li>
+                <li>Frutas
+                    <ul>
+                        <li>Fresas</li>
+                        <li>Melón</li>
+                        <li>Albaricoques</li>
+                        <li>Sandía</li>
+                        <li>Uvas</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p style="color: chartreuse;">- Formato personalizado:</p>
+    <p>"list-style: circle;"</p>
+    <ol style="list-style: circle;">
+        <li>Lista</li>
+        <li>Lista</li>
+        <li>Lista</li>
+    </ol>
+    <p>"list-style: disc;"</p>
+    <ol style="list-style: disc;">
+        <li>Lista</li>
+        <li>Lista</li>
+        <li>Lista</li>
+    </ol>
+    <p>"list-style: inside;"</p>
+    <ol style="list-style:inside;">
+        <li>Lista</li>
+        <li>Lista</li>
+        <li>Lista</li>
+    </ol>
+    <p>"list-style: georgian;"</p>
+    <ol style="list-style:georgian;">
+        <li>Lista</li>
+        <li>Lista</li>
+        <li>Lista</li>
+    </ol>
+    <p>ETC</p>
+    <hr><br>
+    <h2>Tablas</h2>
+    <a href="../Tablas/index.html"><button>Como hacer tablas</button></a>
+    <br>
+    <hr><br>
+    <h2>Formularios</h2>
+    <p>Para hacer un formulario abriremos la etiqueta "form" <br>
+       Dentro de la etiqueta form ya podemos empezar a construri nuestro formulario<br>
+       Hay x principales etiquetas dentro del formulario:
+    </p>
+    <p style="color: chartreuse;">- Input y label:</p>
+    <p>Para crear un input usamos la etiqueta "input" y dentro de ella le damos un id ej: id="texto1"
+       Para crear un label de ese input creamos la etiqueta "label" y dentro de ella ponemos for="texto1"
+    </p>
+    <form>
+        <label for="texto1">- Nombre: </label><input type="text" id="texto1" name="prueba">
+    </form>
+    <br>
+    <p style="color: chartreuse;">- Fieldset:</p>
+    <p>Para que quede más guapo le podemos poner dentro del formulario la etiqueta "fieldset" y dentro del fieldset cosas.<br>
+       Dentro del "fieldset" le podemos poner la etiqueta "legend".<br>
+       En un mismo formulario podemos poner más de un fieldset.
+    </p>
+    <form>
+        <fieldset>
+            <legend>Leyenda</legend>
+            <label for="texto1">- Nombre: </label><input type="text" id="texto1" name="prueba">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Leyenda 2</legend>
+            <label for="texto1">- Apellidos: </label><input type="text" id="texto1" name="prueba">
+        </fieldset>
+    </form>
+    <br>
+    <a href="inputs.html"><button>TODOS los tipos de input</button></a>
 </body>
 </html>

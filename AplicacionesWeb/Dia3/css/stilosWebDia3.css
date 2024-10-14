@@ -1,0 +1,69 @@
+body{
+
+    background-color: black;
+    
+}
+
+h1, h2, h3{
+
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+
+    color: white;
+
+}
+
+blockquote {
+
+    color: white;
+
+}
+
+address {
+
+    color: white;
+
+}
+
+hr {
+
+    width: 50%;
+    float: left;
+
+}
+
+ol, ul {
+
+    color: white ;
+
+}
+
+button{
+
+    color: white;
+    background-color: red;
+    border-color: red;
+    border-radius: 10px;
+
+}
+
+table {
+
+    color: white;
+
+}
+
+legend {
+
+    color: white;
+    
+}
+
+label {
+
+    color: white;
+
+}

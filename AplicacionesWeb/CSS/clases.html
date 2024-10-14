@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases en CSS</title>
+    <style>
+
+       
+
+        .textocentrado {
+
+            text-align: center;
+            
+
+        }
+
+        .rojo {
+
+            color: red;
+
+        }
+
+        .verde {
+
+            color: green;
+
+        }
+
+        .derecha {
+
+            text-align: end;
+
+        }
+        /*Exclusivamente solo se aplicara a las etiquetas p*/
+        p.negrita {
+
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 class="verde rojo">Mi tituloi de Clases</h1>
+    <h2 class="textocentrado">¿que son las clases en CSS?</h2>
+    <p>Una clases es un conjunto de reglas bajo el nombre que yo le quiera dar</p>
+    <p class="textocentrado rojo">Además, las aplicare sobre los elementos QUE YO QUIERA</p>
+    <p class="textocentrado derecha">Para crear una clase necesitamos ponerle un punto delante del nombre de la clase</p>
+    <hr>
+    <div>
+        <p class="negrita">Aqui combino clases con selectores</p>
+        <p>Este <span class="negrita">es mi segundo párrafo</span></p>
+    </div>
+</body>
+</html>

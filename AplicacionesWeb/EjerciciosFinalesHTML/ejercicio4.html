@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria pepe</title>
+</head>
+<body>
+    <img src="media/pizaapng.webp">
+    <form>
+        <fieldset>
+            <legend>Configura tu pizza</legend>
+            - Tipo de masa: <br>
+            <input type="radio" name="tipoDePizza" value="fina" id="fina"> <label for="fina">Fina</label>
+            <br>
+            <input type="radio" name="tipoDePizza" value="gorda" id="gorda"> <label for="gorda">Gorda</label>
+            <br><br>
+            - Salsa <br>
+            <input type="radio" id="tom" name="salsa" value="Tomate"> <label for="tom">Tomate</label>
+            <br>
+            <input type="radio" id="barb" name="salsa" value="Barbacoa"> <label for="barb">Barbacoa</label>
+            <br>
+            <input type="radio"  id="carb" name="salsa" value="Carbonara"> <label for="carb">Carbonara</label>
+            <br><br>
+            - Queso <br>
+            <input type="radio" name="queso" id="si"> <label for="si">Si</label>
+            <input type="radio" name="queso" id="no"> <label for="no">No</label>
+            <br><br>
+            <label for="ing">- Ingredientes: </label>
+            <select id="ing">
+                <option value="Mozzarella">Mozzarella</option>
+                <option value="Jamon">Jamón</option>
+                <option value="Aceitunas">Aceitunas</option>
+                <option value="picante">Picante</option>
+                <option value="Pimientos">Pimientos</option>
+                <option value="Champiñones">Champiñones</option>
+                <option value="Atun">Atún</option>
+                <option value="Albahaca Fresca">Albahaca fresca</option>
+                <option value="Extra queso">Extra de queso</option>
+            </select>
+            <br><br>
+            <label for="tam">- Tamaño de la pizza: </label>
+            <select id="tam">
+                <option>Pequeña</option>
+                <option>Mediana</option>
+                <option>Familiar</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+           <legend>Datos de pago</legend>
+            <label for="numcuent">- Número de cuenta: </label><input type="number" id="numcuent" name="Numero de cuenta">
+            <br><br>
+            <label for="mon">- Mes de caducidad: </label><input type="month" id="mon" name="Mes de caducidad">
+            <br><br>
+            <label for="cod">- Código de seguridad: </label><input type="text" name="Codigo de seguridad" id="cod">
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <label for="direc">- Dirección completa: </label><input type="text" id="direc" name="Direccion">
+            <br><br>
+            <label for="texta">Observaciones:</label>
+            <br>
+            <textarea id="texta" rows="5" cols="20"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>

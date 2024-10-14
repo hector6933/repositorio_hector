@@ -1,0 +1,46 @@
+/* AQUI TODO NUESTRO CODIGO ES CSS*/
+
+/*Selectores: Con los nombres de las etiquetas:*/
+h1 {
+
+    color: red;
+
+}
+
+body {
+
+    color: black;
+
+}
+p {
+
+    color: red;
+
+}
+/*para que todos los "p" dentro de un div tengan este estilo: */
+div p {
+
+    color: blue;
+
+}
+
+/*Exclusivamente para los parrafos cuyo padre DIRECTO sea un div*/
+div > p {
+
+    color: blueviolet;
+
+}
+/*Para que los dos tengan los siguientes estilos: */
+h1, p {
+
+    background-color: aquamarine;
+
+}
+/*Este se refiere a TODA la página, mas potente que body: */
+/*
+* {
+    
+    color:red;
+
+}
+*/

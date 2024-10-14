@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+
+            <label for="nom">Nombre: </label><input type="text" name="Nombre" id="nom">
+            <br><br>
+            <label for="dir">Dirección completa: </label><input type="text" name="Direccion" id="dir">
+            <br><br>
+            <label for="mail">Email: </label><input type="email" id="mail" name="Email">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Datos del trabajo</legend>
+            <label for="habita">Número de habitaciones: </label><input type="number" id="habita" name="Numero de habitaciones">
+            <br><br>
+            <label for="col">Color: </label><input type="color" id="col" name="color">
+            <br><br>
+            <label for="check">Pintar el techo: </label><input type="checkbox" id="check" name="Pintar el techo" value="Pintar el techo">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Otra información</legend>
+            <textarea id="textarea" name="otra informacion" cols="40" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </form>
+</body>
+</html>
