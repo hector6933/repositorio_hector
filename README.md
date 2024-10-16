@@ -2,4 +2,4 @@ hola esto es un  readme, jaja xD
 
 cambios
 
-Web: 
+Web: https://hector6933.github.io/repositorio_hector/PaginaIndex/index.html
