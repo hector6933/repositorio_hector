@@ -1,0 +1,86 @@
+body{
+
+  background-color: black;
+  
+}
+
+.centrado {
+
+  text-align: center;
+
+}
+hr {
+
+  width: 70%;
+  justify-content: center;
+  height: 5px;
+  border-radius: 20px;
+  border-color: red;
+  background-color: red;
+  
+}
+.titulo {
+
+  color:white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 60px;
+  
+} 
+
+h2, h3{
+
+  color:greenyellow;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+p{
+
+  color: white;
+
+}
+
+blockquote {
+
+  color: white;
+
+}
+
+address {
+
+  color: white;
+
+}
+
+
+ol, ul {
+
+  color: white ;
+
+}
+
+button{
+
+  color: white;
+  background-color: red;
+  border-color: red;
+  border-radius: 10px;
+
+}
+
+table {
+
+  color: white;
+
+}
+
+legend {
+
+  color: white;
+  
+}
+
+label {
+
+  color: white;
+
+}
