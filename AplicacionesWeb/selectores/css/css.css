@@ -1,0 +1,17 @@
+/* Selector UNIVERSAL*/
+
+* {
+
+    color: #1d4aee;
+
+}
+/* Selector de ETIQUETA*/
+
+h2, p {
+
+    color: green;
+    background-color: antiquewhite;
+}
+
+/* Todos los párrafos contenidos en un section*/
+
