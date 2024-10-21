@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclases 2</title>
+
+    <style>
+        /* Pseudoclases que vamos a ver: */
+        button:hover {
+
+            color: white;
+
+        }
+
+        input:focus {
+
+            color: red;
+            background-color: aqua;
+
+        }
+
+        button:active {
+
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        table, th, td {
+
+            border: 3px solid red; 
+            border-collapse: collapse;
+            text-align: center;
+        }
+        /* Para que en las filas impares se aplique el siguiente estilo */
+        tr:nth-child(even) {
+
+            background-color: black;
+            color: white;
+
+        }
+
+        /* Para que solo la fila que le indico se aplique el siguiente estilo */
+
+        tr:nth-child(3) {
+
+            color: blueviolet;
+
+        }
+
+        /* Para que solo la primera fila tenga este estilo*/
+        tr:first-child{
+
+            background-color: chartreuse;
+
+        }
+
+        /* Para que solo en la ultima fila tenga el siguiente estilo */
+
+        tr:last-child {
+
+            background-color: tomato;
+
+        }
+
+        /* Para que cuando pases el ratón por encima se aplique el siguiente estilo*/
+
+        tr:hover {
+
+            border: 5px solid blue;
+
+        }
+
+
+        /* Para que cuando pases el raton por encima de un td y un th se aplique el siguiente estilo*/
+
+        td:hover, th:hover {
+
+            border: 6px solid yellow
+            
+        }
+
+        /* Para que cuando este checked el label tenga el siguiente estilo (NO LO VA A PREGUNTAR)*/
+
+        input:checked + label {
+
+            text-transform: uppercase;
+            color: blue;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h3>Pseudoclases 2</h3>
+    <hr>
+
+    <button>Botón 1</button>
+    <button>Botón 2</button>
+    <button>Botón 3</button>
+
+    <hr>
+
+    <h4>Enlaces de interés</h4>
+
+    <ul>
+
+        <li><a href="#">Enlace 1</a></li>
+        <li><a href="#">Enlace 2</a></li>
+        <li><a href="#">Enlace 3</a></li>
+
+    </ul>
+    <input type="email" name="email" id="email" placeholder="email">
+    <br>
+    <input type="password" name="contrasena" id="pas" placeholder="Introduzca su contraseña">
+    
+    <hr>
+    <h2>Tabla mágica: </h2>
+    <table>
+        <tr>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MARTES</th>
+            <th>MARTES</th>
+        </tr>
+
+        <tr>
+            <td>MARTES</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+        </tr>
+
+        <tr>
+            <td>MARTES</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+        </tr>
+
+        <tr>
+            <td>MARTES</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+        </tr>
+
+        <tr>
+            <td>MARTES</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+        </tr>
+
+        <tr>
+            <td>MARTES</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+            <td>LENGUA</td>
+        </tr>
+    </table>
+    <hr>
+
+    <input type="checkbox" name="check" id="a"> <label for="a">Aficion 1</label> <br>
+    <input type="checkbox" name="check" id="b"> <label for="b">Aficion 2</label> <br>
+    <input type="checkbox" name="check" id="c"> <label for="c">Aficion 3</label> <br>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+
+    <style>
+
+    body {
+        
+        background-color: rgb(0, 25, 109);
+
+    }
+
+    h1 {
+
+        color: yellow;
+        /* Para poner un estilo de fuente con espacios hay que ponerlo entre comillas*/
+        font-family: "Comic Sans Ms";
+
+    }
+
+    h2 {
+
+        font-family: Arial;
+        color: white;
+
+        /* Modificadores de Texto: */
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: underline overline;
+        
+    }
+
+    h3 {
+
+        color: red;
+        font-family: "Comic Sans Ms";
+
+    }
+
+    p {
+
+        color: white;
+        font-size: 15px;
+        font-family: Arial;
+
+    }
+
+    
+    .p1{
+
+        color: pink;
+
+        /* Tamaño de la negrita que se pone*/
+        font-weight: 600;
+
+    }
+
+    .negrita {
+
+        font-weight: bold;
+
+    }
+
+    .cursiva {
+
+        font-style: italic;
+
+    }
+
+    .alberto {
+
+        text-align: right;
+
+    }
+
+    .alberto2 {
+
+        text-align: center;
+
+    }
+
+    .alberto3 {
+
+        text-align: justify;
+
+    }
+
+    .smr2 {
+
+        text-decoration: underline;
+
+    }
+
+    .smr22 {
+
+        text-decoration: line-through;
+
+    }
+
+    .smr23 {
+
+        text-decoration: overline;
+
+    }
+
+    /* em es el porcentaje con respecto al padre, suele ser un <p>*/
+    span {
+
+        font-size: 1.5em;
+        
+    }
+
+    /*COSA GUAPA
+    span {
+
+        color: white;
+        text-decoration: overline;
+
+    }
+    */
+    hr {
+
+        border-width: 4px;
+        border-style: solid;
+        border-color: red;
+        /* 
+        Border hace lo mismo de la siguiente manera
+        border: 6px solid red;
+        */
+        border-radius: 20px;
+        width: 35%;
+        float: left;
+       
+    }
+
+    a {
+
+        text-decoration: none;
+
+    }
+
+    .mayus {
+
+        text-transform: uppercase;
+
+    }
+
+    .minus {
+
+        text-transform: lowercase;
+
+    }
+
+    .cap {
+
+        text-transform: capitalize;
+
+    }
+
+    .spacing {
+
+        letter-spacing: 3px;
+
+    }
+
+    .spacing2 {
+
+        letter-spacing: 30px;
+
+    }
+
+    .spacing3 {
+
+        letter-spacing: -1px;
+
+    }
+
+    .espacio {
+
+        line-height: 2;
+
+    }
+
+    .espacio2 {
+
+        line-height: 5;
+
+    }
+
+    .sangria {
+
+        text-indent: 20px;
+
+    }
+
+    .espaciado {
+
+        word-spacing: 10px;
+
+    }
+
+    .espacioBlanco {
+
+        white-space: nowrap;
+
+    }
+
+    .pre {
+
+        white-space: pre;
+
+    }
+    </style>
+</head>
+<body>
+
+    <h1>----- Propiedades de CSS -----</h1>
+    <hr>
+    <br>
+    <h2>Colores con transparencia</h2>
+
+    <p>Esto es un párrafo</p>
+
+    <p>Esto es un <span>párrafo que incluimos</span> en nuestra web</p>
+
+    <p class="p1">Otro párrafo</p>
+
+    <p class="negrita">Párrafo en negrita con font-weigh: bold</p>
+
+    <p class="cursiva">Párrafo en cursiva con font-style: italic;</p>
+
+    <p class="cursiva negrita">Los dos a la vez separandolos con un espacio en el class</p>
+
+    <p class="alberto">Hola esto es un párrafo class="alberto", tiene un text-align: right;</p>
+
+    <p class="alberto2">Hola esto es un párrafo class="alberto2", tiene un text-align: center;</p>
+
+    <p class="alberto3">Hola esto es un párrafo class="alberto3", tiene un text-align: justify;</p>
+
+    <br>
+
+    <p class="smr2">Hola esto es un texto con class="smr2", tiene un text-decoration: underline;</p>
+
+    <p class="smr22">Hola esto es un texto con class="smr22", tiene un text-decoration: underline;</p>
+
+    <p class="smr23">Hola esto es un texto con class="smr22", tiene un text-decoration: underline;</p>
+
+    <a href="https://www.google.es" target="_blank"><p>Ir a google</p></a>
+
+    <br><br><br>
+    <h2>Más propiedades</h2>
+    <hr>
+    <br>
+    <p class="mayus">Esto es un párrafo con un text-transform: uppercase;</p>
+
+    <p class="minus">AAAAAAAA Esto es un párrafo con un text-transform: lowercas;</p>
+
+    <p class="cap">Esto es un párrafo con un text-transform: capitalize;</p>
+
+    <p class="spacing">Esto es un párrafo con un letter-spacing: 3px</p>
+
+    <p class="spacing2">Esto es un párrafo con un letter-spacing: 30px</p>
+
+    <p class="spacing3">Esto es un párrafo con un letter-spacing: -1px</p>
+
+    <h3>Espacio entre líneas de 2, con line-height: 2;</h3>
+    <p class="espacio">Texto Texto Texto</p>
+    <p class="espacio">Texto Texto Texto</p>
+    <p class="espacio">Texto Texto Texto</p>
+    <p class="espacio">Texto Texto Texto</p>
+
+    <h3>Espacio entre líneas de 5, con line-height: 5;</h3>
+    <p class="espacio2">Texto Texto Texto</p>
+    <p class="espacio2">Texto Texto Texto</p>
+    <p class="espacio2">Texto Texto Texto</p>
+    <p class="espacio2">Texto Texto Texto</p>
+
+    <p class="sangria">Texto con sangria de 20 con text-indent: 20px;</p>
+
+    <p class="espaciado">Texto con espacio entre palabras con word-spacing: 10px;</p>
+
+    <p class="espacioBlanco">Forzar todo a una línea: Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam tempora animi eius doloribus perspiciatis voluptate. Provident eos vero molestias eum doloremque, repellat voluptas mollitia repudiandae quae itaque unde. Ullam, ab dolor. Harum nisi commodi cupiditate aliquam ipsam pariatur vel est qui provident! Doloremque dolor, saepe earum suscipit laborum veritatis id voluptates fugit nobis ad? Quibusdam molestias nobis tempore porro, repellendus ea adipisci cumque perferendis aut vitae consectetur necessitatibus doloremque! Suscipit blanditiis pariatur iste nam asperiores a, quos rerum ab ea, optio maiores, rem facere. Quos distinctio laborum enim eum, quod in nisi? Tempora ipsam reiciendis laudantium at! Ipsum, doloremque!</p>
+
+    <p class="pre">
+        Tal como yo lo escriba en mi editor, 
+        se hacen 
+        los saltos de linea en 
+        el resultado
+        con white-space: pre;  
+    </p>
+</body>
+</html>
