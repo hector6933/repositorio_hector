@@ -27,6 +27,14 @@ button{
 
 }
 
+button:hover {
+
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+    font-weight: bold;
+
+}
 u {
 
     color: rgb(45, 45, 248);

@@ -1,14 +1,21 @@
-body {
+body{
 
     background-color: black;
 
 }
 
-h1 {
+h1, h2, h3{
 
-    color: blue;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 
+}
+
+p {
+
+    color: white;
+    display: inline;
 }
 
 button{
@@ -27,4 +34,10 @@ button:hover {
     color: black;
     font-weight: bold;
 
+}
+
+u {
+
+    color: rgb(45, 45, 248);
+    
 }
