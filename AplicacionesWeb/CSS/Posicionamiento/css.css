@@ -1,0 +1,79 @@
+body {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: 'Segoe UI';
+    font-weight: 600;
+    background-color: wheat;
+}
+
+/*TOP y LEFT funcionan a corde a los elementos en los que estan dentro*/
+/* El Static NO se mueve*/
+
+.static {
+
+    background-color: #757677;
+    position: static;
+    top: 10px;
+    left: 10px;
+
+}
+
+/* Relative se puede mover Top y Left es como un margin pero sin entrar en el Div*/
+.relative {
+
+    background-color: #e56b6f;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    top: 30px;
+    left: 30px;
+    border: 1px solid black;
+}
+
+/* Ignora el resto de elementos y se PUEDE mover */
+
+.absolute {
+
+    background-color: #eaac8b;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+/* Se pega arriba de la pantalla en cuanto bajas*/
+.sticky {
+
+    background-color: green;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    
+
+}
+
+.espacio {
+
+    background-color: darkcyan;
+    height: 700px;
+
+}
+
+/* El fixed SIEMPRE esta pegado en la pantalla*/
+
+.fixed {
+
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 33px;
+    right: 0;
+
+}
+div {
+
+    padding-left: 5px;
+
+}

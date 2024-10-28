@@ -1,0 +1,22 @@
+.cuadrado {
+
+    width: 100px;
+    height: 100px;
+    background-color: #123;
+
+}
+
+.elemento {
+
+    width: 100%;
+    height: 200px;
+    background-color: beige;
+    /* Imagen por url*/
+    background-image: url(https://picsum.photos/400/200);
+    /* Si la imagen no cabe en todo el background se repite, esto es para que NO se repita*/
+    background-repeat: no-repeat;
+    background-position: 95% 50%; /* Tambien se puede poner atributos como "center right" etc*/
+    /* Para que la imagen cubra el background*/
+    background-size: cover;
+
+}
