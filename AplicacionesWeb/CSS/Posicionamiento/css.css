@@ -9,7 +9,7 @@ body {
 }
 
 /*TOP y LEFT funcionan a corde a los elementos en los que estan dentro*/
-/* El Static NO se mueve*/
+/* El Static NUNCA se mueve*/
 
 .static {
 
@@ -20,7 +20,7 @@ body {
 
 }
 
-/* Relative se puede mover Top y Left es como un margin pero sin entrar en el Div*/
+/* Relative se mueve su parte visible pero realmente se queda en donde esta*/
 .relative {
 
     background-color: #e56b6f;
@@ -32,7 +32,7 @@ body {
     border: 1px solid black;
 }
 
-/* Ignora el resto de elementos y se PUEDE mover */
+/* Absolute Ignora el resto de elementos y se PUEDE mover donde quiera */
 
 .absolute {
 
