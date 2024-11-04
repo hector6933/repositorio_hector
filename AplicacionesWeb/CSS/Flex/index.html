@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style>
+
+        body {
+
+            background-color: beige;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            
+        }
+
+        .contenedor2 {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .contenedor4 {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .contenedor5 {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+        }
+
+        .contenedor6 {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: row wrap;
+            justify-content: space-around;
+        }
+        .contenedor3 {
+
+            border: 3px solid blue;
+            background-color: #ccc;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            /* Display establece la direccion de los elementos ya sea en Columnas o Líneas*/
+            display: flex;
+            /*flex-direction: row;
+            /* flex-wrap: wrap; hace que los elementos no pierdan nunca su forma establecida
+            flex-wrap: wrap;*/
+            flex-flow: column wrap;
+            justify-content: center;
+        }
+
+        .caja {
+
+            border: 1px solid black;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            width: 120px;
+            height: 120px;
+            /* Espacio entre líneas*/
+            line-height: 120px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .caja1 {
+
+            background-color: aquamarine;
+
+        }
+
+        .caja2 {
+
+            background-color: yellow;
+
+        }
+
+        .caja3 {
+
+            background-color: lightcoral;
+
+        }
+
+        .caja4 {
+
+            background-color: lightskyblue;
+
+        }
+
+        h3 {
+
+            text-align: center;
+
+        }
+
+        h2 {
+
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Introducción a Flexbox</h2>
+    <hr>
+
+    <h3>flex-flow: row-wrap;</h3>
+    <div class="contenedor">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+    </div>
+
+    <br><br>
+    <h3>flex-flow: row-wrap; justify-content: center</h3>
+    <div class="contenedor2">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        
+    </div>
+
+    <br><br>
+    <h3>flex-flow: row-wrap; justify-content: space-between</h3>
+    <div class="contenedor4">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        
+    </div>
+    <br><br>
+    <h3>flex-flow: row-wrap; justify-content: space-evenly</h3>
+    <div class="contenedor5">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        
+    </div>
+    <br><br>
+    <h3>flex-flow: row-wrap; justify-content: space-around</h3>
+    <div class="contenedor6">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        
+    </div>
+    
+    <br><br>
+    <h3>flex-flow: colum-wrap;</h3>
+    <div class="contenedor3">
+
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+        <div class="caja caja1">caja 1</div>
+        <div class="caja caja2">caja 2</div>
+        <div class="caja caja3">caja 3</div>
+        <div class="caja caja4">caja 4</div>
+    </div>
+</body>
+</html>
