@@ -1,0 +1,75 @@
+body {
+
+    background-color: black;
+
+}
+
+h1 {
+
+    color: white;
+    text-align: center;
+}
+
+.container {
+
+    background-color: pink;
+    border: 3px solid white;
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    
+    display: flex;
+
+                                                                         /* PROPIEDADES DEL MAIN AXIS (eje x)*/
+
+    flex-flow: row wrap; /* Esto hace que los elementos se pongan el lineas y los agrupe en líneas o en columnas pero que quepan */
+    /* flex-flow son los dos a la vez*/
+    /*flex-direction: row;
+    flex-wrap: wrap-reverse;*/
+    justify-content: center; /* Alinea cosas en el eje x*/
+
+    /*justify-content: space-between; --> Deja espacio empezando desde el principio y acaba en el final*/
+    /*justify-content: space-around;  --> Casi lo mismo que el space-evenly pero no lo entiendo xD*/
+    /*justify-content: space-evenly;  --> Deja la misma distancia entre todos los elementos (es god)*/
+
+                                                                        /* PROPEIDADES DEL CROSS AXIS (eje y)*/
+
+    align-items: center; /* Alinea cosas en el eje y*/
+    /*align-items: stretch; --> Si los elementos hijos no tiene height establecido este hará que tengan la altura hasta el elemento padre*/
+    align-content: center; /* Establece como los elementos se separan en el eje Y verticalmente*/
+    /* gap: 20px; --> Es el margen de los elementos entre si, no se como el margin que les da margen por todos los lados*/ /* Si le pones un margin de 10px entre elementos habria un margin de 20px*/
+}
+
+.container > div {
+
+    background-color: aquamarine;
+    border: 2px solid blue;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 5px;
+    margin: 2px;
+    height: 20px;
+    
+}
+
+.item-1 {
+
+    /*order: 2; --> Establece el orden de los elementos (habría que ponerlo en todos)*/
+
+}
+
+.item-2 {
+
+
+}
+
+.item-3 {
+
+
+}
+
+.item-4 {
+
+
+}
