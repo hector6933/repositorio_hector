@@ -1,0 +1,159 @@
+.contenedor, .contenedor > div {
+
+    background-color: #ecec;
+    padding: 1em;
+
+}
+
+
+.contenedor div:hover {
+
+    border: 1px solid blue;
+
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr medida hecha por y para grid, usar siempre.*/
+    gap: 1em;
+
+    column-gap: 1em; /* Espacio vertical entre columnas*/
+    grid-template-rows: auto auto; /* La propiedad auto adapta las rows al tamaño del contenido*/
+
+}
+
+.contenedor2 div:hover {
+
+    border: 1px solid blue;
+
+}
+
+.contenedor2, .contenedor2 > div {
+
+    background-color: #ecec;
+    padding: 1em;
+
+}
+
+.contenedor2 {
+
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Repite 8 veces el valor 1fr*/
+    gap: 1em;
+
+    column-gap: 1em;
+    grid-template-rows: auto auto; 
+
+}
+
+.contenedor3 div:hover {
+
+    border: 1px solid blue;
+
+}
+
+.contenedor3, .contenedor3 > div {
+
+    background-color: #ecec;
+    padding: 1em;
+
+}
+
+.contenedor3 {
+
+    display: grid;
+    grid-template-columns: minmax(300px, 2fr) 200px 1fr 1fr; /* El mínimo y el máximo de la primera columna*/
+    gap: 1em;
+
+    column-gap: 1em;
+    grid-template-rows: auto auto; 
+
+}
+
+.contenedor4, .contenedor4 > div {
+
+    background-color: #ecec;
+    padding: 1em;
+
+}
+
+.contenedor4 div:hover {
+
+    border: 1px solid blue;
+
+}
+
+.contenedor4 {
+
+    display: grid;
+    grid-template-columns: minmax(300px, 2fr) 200px 1fr 1fr; /* El mínimo y el máximo de la primera columna*/
+    gap: 1em;
+
+    column-gap: 1em;
+    grid-template-rows: auto auto; 
+
+}
+
+.item {
+
+    background-color: yellow;
+
+}
+
+.contenedor-dentro {
+
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 2fr 1fr;
+
+}
+
+.contenedor5 div {
+
+    background-color: #f6c8c8;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+
+.contenedor5 div:hover {
+
+    border: 1px solid blue;
+
+}
+
+.contenedor5 {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    grid-template-rows: 100px 100px 100px;
+
+}
+
+.item-1 {
+
+    grid-column: 1 / 3;
+
+}
+
+.item-2 { /* Si lo estas forzando se adaptan*/
+
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+
+}
+
+.item-5 {
+
+    grid-column: 2 / 4;
+
+}
+
+.item-3 {
+
+    grid-row: 2 / 4;
+
+}
