@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <script>
+
+        let precio = parseInt(prompt("Introduce el precio del producto")); // La función promtp(); mete cosas en String, por eso usamos parseInt(); para convertir a int lo que hay dentro de el
+        const iva = 21;
+        let calculo = (precio * iva) / 100;
+
+        let precioFinal = precio + calculo;
+
+        alert("El precio final con iva incluido es de " + precioFinal); // Esta funcion lo saca por una alerta del navegador
+        
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

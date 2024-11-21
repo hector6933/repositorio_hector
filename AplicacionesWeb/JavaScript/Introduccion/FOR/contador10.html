@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba</title>
+
+    <script>
+
+        for (let i = 1; i <= 10; i++) {
+
+            console.log("i = " + i);
+
+        }
+
+        let vari = 0;
+        function hola() {
+
+            console.log("Hola " + vari);
+            vari++;
+        }
+
+        function limp() {
+
+            console.log("prueba");
+            console.clear();
+
+        }
+
+        function mal() {
+
+            console.error("Error jajaja");
+        }
+    </script>
+</head>
+<body>
+
+    <h2>Hola</h2>
+
+    <button onclick="hola()">Hola Boton</button>
+    <br>
+    <button onclick="limp()">Limpiar Consola</button>
+    <br>
+    <button onclick="mal()">Error</button>
+    
+</body>
+</html>
