@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJ 1</title>
+
+    <script>
+
+        let nota = parseInt(prompt("Escribe una nota"));
+
+        if (nota >= 9 && nota <= 10) {
+
+            console.log("Tu nota es un sobresaliente");
+
+        } else if (nota >= 7 && nota < 9) {
+
+            console.log("Tu nota es un notable");
+
+        } else if (nota >= 5 && nota < 7) {
+
+            console.log("Tu nota es un aprobado");
+
+        } else if (nota < 5 && nota >= 0) {
+
+            console.log("Tu nota es un suspenso");
+
+        } else {
+
+            console.error("Los valores tienen que comprender entre 0 y 10");
+
+        }
+
+        
+        function reset(){
+
+            if (num == 0 ) {
+
+                console.log("El contador YA esta a 0");
+
+            } else {
+
+                num = 0;
+                console.log("----- Contador reiniciado correctamente !!! -----");
+
+            }
+            
+
+        }
+
+        let num = 0;
+        function unError(){
+
+            console.error("ERROR AAAAA " + num);
+            num++;
+        }
+
+        function borrar(){
+
+            console.clear();
+
+        }
+
+    </script>
+    <style>
+
+        .error {
+
+            color: white;
+            font-weight: bold;
+            background-color: red;
+            border-radius: 20px;
+            padding: 30px;
+            border: 6px solid black;
+            font-size: large;
+        }
+
+        .error:hover {
+
+            background-color: black;
+            color: red;
+            border: 6px solid red;
+
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="unError()" class="error">Error</button>
+    <br><br>
+    <button onclick="reset()" class="error">Reiniciar contador</button>    
+    <br><br>
+    <button onclick="borrar()" class="error">Borrar</button>
+    
+</body>
+</html>

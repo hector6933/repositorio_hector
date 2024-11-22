@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT</title>
+
+    <script>
+
+        //function guardar() {
+
+            
+        //}
+        function imprimir(){
+
+            let nota = document.getElementById("numero").value;
+            let txt = document.getElementById("texto").value;
+            document.getElementById("hache2").innerText = txt;
+
+        }
+        
+    </script>
+
+    <style>
+
+        .negrita {
+
+            font-weight: bold;
+
+        }
+
+        .aaa {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: red;
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+
+    <label for="numero" class="negrita">Numero: </label><input type="number" id="numero" name="Numero">
+    <br><br>
+    
+    <br><br>
+    <label for="texto" class="negrita">Texto: </label><input type="text" id="texto">
+    <button onclick="imprimir()">Imprimir</button>
+    <h2 id="hache2" class="aaa"></h2>
+    
+</body>
+</html>
