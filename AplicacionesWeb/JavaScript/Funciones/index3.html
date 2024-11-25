@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones 3</title>
+
+    <script>
+
+        function saludar( nombre ) {
+
+            console.log("Hola " + nombre + " !!!");
+
+        }
+
+        function sumar( num1, num2) {
+
+            console.log(num1 + num2);
+
+        }
+
+    </script>
+
+    <style>
+
+        .boton {
+
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: purple;
+            color: white;
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+
+        .boton:hover {
+
+            transform: scale(1.2);
+
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <button onclick="saludar(prompt('A quien quieres saludar'))" class="boton">Saludo</button>
+    <br><br>
+    <button onclick="sumar(3, 4)" class="boton">Sumar 3 y 4</button>
+
+</body>
+</html>

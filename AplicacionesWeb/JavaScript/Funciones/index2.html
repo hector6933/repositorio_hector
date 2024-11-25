@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Más funciones</title>
+
+    <script>
+      
+    // Declaro la función
+    let a = 0;
+    function saludarSMR() {
+
+        console.log("Hola SMR " + a);
+        a++;
+    }
+
+    let b = 0;
+    function saludarDAM(){
+
+        console.log("Hola DAM " + b)
+        b++
+    }
+
+
+    function saludoAlerta(){
+
+        alert("Hola a todos");
+
+    }
+
+    </script>
+
+    <style>
+
+        .boton {
+
+            background-color: black;
+            color: white;
+            border: 2px solid red;
+            border-radius: 20px;
+            transition: all 0.5s;
+        }
+
+        .boton:hover {
+
+            transform: scale(1.2);
+            background-color: red;
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    
+<h2>Funciones</h2>
+
+<button onclick="saludarSMR()" class="boton">Saludo SMR</button>
+<br><br>
+<button onclick="saludarDAM()" class="boton">Saludo DAM</button>
+<br><br>
+<button onclick="saludoAlerta()" class="boton">ALERTA !!!</button>
+
+</body>
+</html>

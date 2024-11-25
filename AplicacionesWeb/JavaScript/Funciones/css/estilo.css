@@ -1,0 +1,63 @@
+body {
+
+    background-color: bisque;
+
+}
+
+h1 {
+
+    justify-self: center;
+
+}
+button {
+
+    background-color: lightgreen;
+    border-radius: 6px;
+    padding: 5px;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+button:hover{
+
+    font-weight: bold;
+    transform: scale(2);
+
+}
+
+.container {
+
+    height: 40px;
+    width: 600px;
+    /*border: 2px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.b1 {
+
+    background-color: lightgreen;
+
+}
+
+.b2 {
+
+    background-color: lightblue;
+
+}
+
+.b3 {
+
+    background-color: lightcyan;
+
+}
+
+.b4 {
+
+    background-color: lightgoldenrodyellow;
+
+}
