@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+
+    <script>
+
+        // Ej 1 Saludo personalizado
+        /*
+        let nombre = prompt("Dime tu nombre");
+        function saludar(nombre) {
+
+            console.log("Hola " + nombre);
+
+        }
+        */
+
+        // Ej 2 Suma de dos números
+
+        // Importante
+        function sumar(a, b) {
+
+            let suma = a + b;
+
+            return suma;
+        }
+        
+        // Formas para llamar a la función
+
+        // ----------- //
+        // Primera forma
+        let resultado1 = sumar(22,33);
+    
+        console.log("El resultado 1 es " + resultado1);
+
+        // Segunda forma
+        let miNumero = 20;
+        let miOtroNumero = 100;
+
+        console.log("El resultado de mis dos numero es de " + sumar(miNumero, miOtroNumero));
+
+        // Tercera forma
+        console.log("El resultado 2 es " + sumar(2,5));
+        // ----------- //
+
+        // Ej 3 Número par o impar
+        let num = 23;
+
+        function esPar(num) {
+
+            if (num % 2 == 0 ) {
+
+                return true;
+
+            } else {
+
+                return false
+
+            }
+
+        }
+
+        let par = esPar(num);
+
+        // Ej 4 Área de un triángulo
+        function areaTriangulo(base, altura) {
+
+            return [(base * altura) / 2];
+
+        }
+
+        console.log("El área del triángulo es de " + areaTriangulo(22,5));
+
+
+        // Ej 5 Celsius a Fahrenheit
+
+        function celsiusAF(celsius) {
+
+            return [(celsius * 9 / 5)  + 32];
+
+        }
+
+        console.log("Los farenheit son " + celsiusAF(20));
+
+        // Ej 6 Repetir una cadena
+
+        function repetirCadena(cadena, veces) {
+
+            return cadena.repeat(veces);
+
+        }
+
+        console.log("Hola repetida: " + repetirCadena("Hola", 4));
+
+        // Ej 7 Calcular promedio
+
+        function calcularPromedio(nombre,a,b,c) {
+
+            return nombre + " tiene una nota de " + [(a + b + c) / 3];
+
+        }
+
+        console.log(calcularPromedio("hector",5,5,10));
+
+
+        // Ej 10 Calcular factorial
+
+        function factorial(n) {
+
+            cosa = n;
+            if ( n < 0 ) {
+
+                return "Introduce un número positivo.";
+
+            } else {
+
+                for (let i = 1; i <= n; i++ ) {
+
+                    cosa = cosa * i;
+
+                }
+
+            }
+
+            return cosa;
+        }
+
+        console.log("El factorial es " + factorial(5));
+
+    </script>
+
+</head>
+<body>
+
+    <button onclick="saludar(nombre)">Saludar Personalizado</button>
+    <br><br>
+
+    
+</body>
+</html>
