@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+
+    let frutas = ["manzana", "pera", "melocoton" , "kiwi", "sandia" , "uva", "andres", "es", "un", "cabron"]        
+
+    // Da igual lo que sea que al final del Array pone esto
+    frutas.push("------------------------------------");
+    // Da igual lo que sea que al principio del Array pone esto
+    frutas.unshift("------------------------------------");
+
+    
+    // Ordena el Array alfabetiamente
+    //frutas.sort();
+
+    // Ordena el Array al revés
+    // frutas.reverse();
+
+    // Este elimina el ultimo valor del Array
+    // frutas.pop();
+
+    // Ese elimina el primer valor del Array
+    //frutas.shift();
+    for (let i = 0; i < frutas.length; i++) {
+
+        console.log("Fruta " + [i+1] + ": " + frutas[i]);
+
+    }
+
+    let usuarios = [];
+
+    let pregunta = parseInt(prompt("Cuantos usuarios quieres meter?"));
+    for (let i = 0; i < pregunta; i++) {
+
+        usuarios[i] = prompt("Usuario " + [i+1]);
+
+    }
+    console.log("El tamaño de usuarios es: " + usuarios.length );
+
+    for (let i = 0; i < usuarios.length; i++) {
+
+        console.log("Usuario " + [i+1] + ": " + usuarios[i]);
+
+    }
+
+    </script>
+</head>
+<body>
+
+    <h2>Arrays</h2>
+    
+</body>
+</html>

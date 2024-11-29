@@ -109,25 +109,24 @@
 
         function factorial(n) {
 
-            cosa = n;
-            if ( n < 0 ) {
+            let resultado = 1;
+           for (let i = n; i > 1; i--) {
 
-                return "Introduce un número positivo.";
+            resultado = resultado * i;
 
-            } else {
-
-                for (let i = 1; i <= n; i++ ) {
-
-                    cosa = cosa * i;
-
-                }
-
-            }
-
-            return cosa;
+           }
+           return resultado;
         }
 
-        console.log("El factorial es " + factorial(5));
+        console.log("El factorial de 5 es: " + factorial(5));
+        console.log("El factorial de 6 es: " + factorial(6));
+        console.log("El factorial de 7 es: " + factorial(7));
+        console.log("El factorial de 8 es: " + factorial(8));
+        console.log("El factorial de 9 es: " + factorial(9));
+        console.log("El factorial de 10 es: " + factorial(10));
+        console.log("El factorial de 11 es: " + factorial(11));
+        console.log("El factorial de 12 es: " + factorial(12));
+        console.log("El factorial de 999 es: " + factorial(999));
 
     </script>
 

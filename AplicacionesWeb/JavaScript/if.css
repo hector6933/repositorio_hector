@@ -1,0 +1,16 @@
+div.container {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+               
+
+}
+
+button {
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 
+}
