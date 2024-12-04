@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <h1 class="parrafos">Ejercicio 1: Cambiar el contenido de un párrafo</h1>
+
+    <p class="parrafos">- Nombre: <span id="nombre" class="nombre"></span></p>
+    
+
+    <p class="parrafos">- Apellidos: <span id="apellidos" class="nombre"></span></p>
+    <button onclick="nombre()" class="botonaco">Introducir Nombre</button>
+    <button onclick="apellidos()" class="botonaco">Introducir apellidos</button>
+    <hr>
+    <h1 class="parrafos">Ejercicio 2: Cambiar el color de fondo</h1>
+    <button class="bot botrojo" onclick="fondo('Red')">Rojo</button>
+    <button class="bot botverde" onclick="fondo('Green')">Verde</button>
+    <button class="bot botazul" onclick="fondo('Blue')">Azul</button>
+    <button class="bot botnegro" onclick="fondo('Black')">Negro</button>
+
+    <h1 class="parrafos">Ejercicio 2: Cambiar el color del texto (Solo a los textos sin CSS)</h1>
+    <button class="bot botrojo" onclick="texto('Red')">Rojo</button>
+    <button class="bot botverde" onclick="texto('Green')">Verde</button>
+    <button class="bot botazul" onclick="texto('Blue')">Azul</button>
+    <button class="bot botnegro" onclick="texto('Black')">Negro</button>
+
+    <p id="parrafo">Parrafo de prueba</p>
+    <hr>
+    <h1 class="parrafos">Ejercicio 3: Mostrar y ocultar un párrafo</h1>
+    <p id="miTexto" style="color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati at corporis non laborum consectetur repudiandae mollitia sapiente nesciunt. Cumque, numquam nostrum sapiente labore ipsa ex soluta cum illo nobis autem nam eaque debitis repellendus adipisci. Consequuntur doloribus officia explicabo alias error ea esse eveniet earum ut enim inventore, totam, aut ipsa hic pariatur commodi nostrum repellendus. Aliquam distinctio sapiente laudantium rem architecto, illo neque sit tempora reprehenderit sint vel quam perferendis officia explicabo suscipit totam voluptates fuga quidem. Odit sit voluptas illum mollitia vel temporibus quos accusantium id sunt quis, optio totam illo voluptatum delectus tempore et culpa molestias!</p>
+    <button onclick="mostrarOcultar()">Mostrar / Ocultar</button>
+    <hr>
+    <h1 class="parrafos">Prueba</h1>
+    <p style="color: white;">Respuesta: <span id="res" style="color: white;"></span></p>
+    <button onclick="comprobar()">¿Es rojo el texto del Ej2?</button>
+</body>
+</html>

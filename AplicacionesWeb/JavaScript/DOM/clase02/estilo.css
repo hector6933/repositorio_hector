@@ -1,0 +1,100 @@
+body {
+
+    background-color: black;
+    
+}
+
+.botonaco {
+
+    background-color: black;
+    color: white;
+    font-family: 'Cascadia Code';
+    padding: 10px;
+    border: 2px solid red;
+    border-radius: 20cm;
+    
+    transition: all 0.5s;
+    margin: 15px;
+}
+
+.botonaco:hover {
+
+    cursor: cell;
+    transform: scale(1.2);
+    font-weight: bolder;
+    color: red;
+}
+
+.bot {
+
+    background-color: coral;
+    border: 2px solid white;
+    border-radius: 20cm;
+    padding: 5px;
+    font-family: 'Cascadia Code';
+    font-weight: bold;
+    cursor: cell;
+    margin: 7px;
+    transition: all 0.5s;
+
+}
+
+.bot:hover {
+
+    transform: scale(1.2);
+    font-weight: bolder;
+
+}
+
+.botrojo:hover {
+
+    color: red;
+    background-color: black;
+
+}
+
+.botverde:hover {
+
+    color: greenyellow;
+    background-color: black;
+
+}
+
+.botazul:hover {
+
+    color: blue;
+    background-color: black;
+
+}
+
+.botnegro:hover {
+
+    background-color: black;
+    color: white;
+
+}
+.nombre {
+
+    color: white;
+    border: 2px solid greenyellow;
+    padding: 2px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: smaller;
+    transition: all 0.5s;
+}
+
+.nombre:hover {
+
+    transform: scale(2);
+    color: green;
+
+}
+
+.parrafos {
+
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}

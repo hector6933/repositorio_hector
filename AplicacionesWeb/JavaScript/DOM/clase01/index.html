@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM cosas guapas</title>
+
+    <script>
+
+        // Cuando escribimo document accedemos a todo el documento web
+        
+        let nose = ["red", "blue", "green"];
+
+        function pulsarBoton() {
+
+            let tituweb = document.getElementById("primero");
+            console.log(tituweb);
+
+        }
+
+        function cambiarColor(col) {
+
+            let body = document.body;
+
+            body.style.background = col;
+
+        }
+
+
+        function fondoRojo() {
+
+            let body = document.body;
+            
+            body.style.background = "red";
+
+        }
+
+        function fondoAzul() {
+
+            let body = document.body;
+            
+            body.style.background = "blue";
+
+        }
+
+        function nombreConsola() {
+
+            let a = document.getElementById('nombre').value;
+            console.log(a);
+
+        }
+        
+        function edadConsola() {
+
+            let b = document.getElementById('edad').value;
+            console.log(b);
+
+        }
+
+        function frase() {
+
+            let nombre = document.getElementById('nombre').value;
+            let edad = document.getElementById('edad').value;
+
+            console.log("Hola " + nombre + ", tienes " + edad + " años");
+
+        }
+
+        // Cosas random:
+        let cosa = 0;
+        function contador() {
+
+            cosa++
+            console.log(cosa);
+            
+        }
+
+        function restart() {
+
+            console.clear();
+            cosa = 0;
+
+        }
+
+    </script>
+</head>
+<body>
+    
+    <header id="primero">
+        lalalal
+        <h1 class="titulo">Titulo de mi web</h1>
+
+    </header>
+
+    <main id="principal">
+
+        <p class="parrafo">Esto es un párrafo</p>
+        <p class="parrafo">Esto es un párrafo</p>
+        <p class="parrafo">Esto es un párrafo</p>
+        <hr>
+        <p class="parrafo">Esto es un párrafo</p>
+
+    </main>
+
+    <button id="boton" onclick="pulsarBoton()">
+
+        Pulsar aquí
+
+    </button>
+    <br><br>
+    <hr>
+    <button onclick="cambiarColor('red')">Fondo rojo</button>
+    <br><br>
+    <button onclick="cambiarColor('blue')">Fondo azul</button>
+    <br><br>
+    <button onclick="cambiarColor('white')">Fondo blanco</button>
+    <br><br>
+    <button onclick="cambiarColor('black')">Fondo black</button>
+    <br><br>
+    <button onclick="cambiarColor('purple')">Fondo purple</button>
+    <br><br>
+    <hr>
+    <br><br>
+
+    <label for="nombre">Nombre:</label><input type="text" id="nombre">
+    <br>
+    <label for="Edad">Edad:</label><input type="text" id="edad">
+    <br><br>
+    <button onclick="nombreConsola()">Obtener nombre por consola:</button>
+    <br><br>
+    <button onclick="edadConsola()">Obtener edad por consola:</button>
+    <br><br>
+    <button onclick="frase()">frase</button>
+    <hr>
+    <h2>Skibidi Toileteadas:</h2>
+    <button onclick="contador()">Contador</button>
+    <br><br>
+    <button onclick="restart()">Restart</button>
+
+</body>
+</html>
