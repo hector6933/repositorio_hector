@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <br><br><br><br><br><br><br>
+    <div class="calculadora">
+
+        <span class="mostrar" id="mostrar">0</span>
+        <br>
+    <div class="cosa">
+        <div class="numeros" id="numeros">
+
+            <button id="1" onclick="uno()">1</button>
+            <button id="2" onclick="dos()">2</button>
+            <button id="3" onclick="tres()">3</button>
+            <button id="4" onclick="cuatro()">4</button>
+            <button id="5" onclick="cinco()">5</button>
+            <button id="6" onclick="seis()">6</button>
+            <button id="7" onclick="siete()">7</button>
+            <button id="8" onclick="ocho()">8</button>
+            <button id="9" onclick="nueve()">9</button>
+            <button class="cero" id="0" onclick="cero()">0</button>
+
+        </div>
+
+        <div class="operadores">
+
+            <button id="clear" onclick="limpiar()">C</button>
+            <button id="sumar" onclick="mas()">+</button>
+            <button id="restar" onclick="menos()">-</button>
+            <button id="multiplicar" onclick="mult()">x</button>
+            <button id="dividir" onclick="divi()">/</button>
+            
+        </div>
+
+       
+    </div>
+    <br>
+    <div class="igual">
+        <button class="igual" onclick="resultado()">=</button>
+    </div>
+    </div>
+
+    
+</body>
+</html>
