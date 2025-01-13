@@ -20,21 +20,22 @@ function limp() {
 let i = 0;
 let j = 0;
 function cambiar() {
-
-    if ( i <= 3) {
-    let justy = ["space-around", "space-between", "space-evenly","center"]
-    let colores = ["red", "green", "blue", "yellow"]
+    let justy = ["space-around", "space-between", "space-evenly","center"];
+    let colores = ["red", "green", "blue", "yellow"];
+    if ( j < colores.length || i < justy.length) {
     document.getElementById('stan').style.justifyContent = justy[i];
     document.getElementById('caja1').style.backgroundColor = colores[j];
     document.getElementById('caja2').style.backgroundColor = colores[j];
     document.getElementById('caja3').style.backgroundColor = colores[j];
     document.getElementById('caja4').style.backgroundColor = colores[j];
-    j++;
     i++;
-    } else {
+    j++;
+    }
 
-        i = 0
-        j = 0
-        
+    if ( i == justy.length || j ==  colores.length) {
+
+        i = 0;
+        j = 0;
+
     }
 }
