@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/contacto.js"></script>
 </head>
 <body>
 
@@ -46,49 +47,91 @@
     </div>
     <div class="mt-5"><img src="https://picsum.photos/2501/300" class="img-fluid" alt="Nose"></div>
     
-    <div class="container mt-5">
-       
-        <div class="row">
-            
-            <div class="col-3">
-                <h2>Imagen:</h2>
-                <p>Imagen de un lobo</p>
-                <img src="media/lobo.jpg" class="img-fluid" alt="Nose">
+    <div class="container mt-5 mb-5">
+      <div class="alert alert-danger alert-dismissible d-none" role="alert" id="alertaMal">
+        <span>Error al enviar el correo :(</span>
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+      </div>
+      <div class="alert alert-success alert-dismissible d-none" role="alert" id="alertaBien">
+        Se ha enviado el correo correctamente !!!
+        <button class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+      </div>
+      
+      
+        <form action="">
+
+            <!--NOMBRE-->
+            <div class="row mt-3">
+
+              <div class="col-12 col-sm-12 col-md-1">
+
+                <label for="nombre" class="form-label ">Nombre:</label>
+
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-11">
+
+                <input placeholder="Escribe tu nombre" type="text" id="nombre" class="form-control ">
+
+              </div>
 
             </div>
-            <div class="col-9">
-                
-                <div class="row cosas">
-                    
-                    <div class="col-12 col-sm-6 col-md-3 border rounded">
-                        <h2 class="h4 mt-2">¿Quien soy?</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam ex similique excepturi, error nihil a at atque illum deserunt inventore accusamus, accusantium eum labore, reprehenderit quae explicabo ut alias!</p>
-                        <button class="btn btn-outline-primary mb-2">Más Información</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 border rounded">
-                        <h2 class="h4 mt-2">¿Donde vivo?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio unde exercitationem laborum quibusdam saepe vero, vitae aut nobis possimus maxime atque quam numquam deleniti asperiores ea corrupti pariatur tempore minima.</p>
-                        <button class="btn btn-outline-primary mb-2">Más Información</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 border rounded">
-                        <h2 class="h4 mt-2">¿Que me gusta?</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore alias ducimus fugit quo dolorem repellat accusamus provident, magni id! Iste laborum soluta commodi. Fuga quae quasi saepe soluta, laudantium incidunt.</p>
-                        <button class="btn btn-outline-primary mb-2">Más Información</button>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-3 border rounded">
-                        <h2 class="h4 mt-2">¿Y que no?</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolores ea commodi cum quo earum beatae illum consequuntur dolore, sint quaerat dicta temporibus nisi deserunt excepturi, et rem quibusdam odio!</p>
-                        <button class="btn btn-outline-primary mb-2">Más Información</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!--EMAIL-->
+            <div class="row mt-3">
 
+              <div class="col-12 col-sm-12 col-md-1">
+
+                <label for="Email" class="form-label">Email:</label>
+
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-11">
+
+                <input placeholder="Introduce el Email" type="email" id="Email" class="form-control">
+
+              </div>
+
+            </div>
+            <!--ASUNTO-->
+            <div class="row mt-3">
+
+              <div class="col-12 col-sm-12 col-md-1">
+
+                  <label for="Asunto" class="form-label">Asunto:</label>
+
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-11">
+
+                <input placeholder="Escribe el asunto" type="text" id="Asunto" class="form-control">
+
+              </div>
+            </div>
+            <!--MENSAJE-->
+            <div class="row mt-3">
+
+              <div class="col-12 col-sm-12 col-md-1">
+
+                  <label for="Asunto" class="form-label">Mensaje:</label>
+
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-11">
+
+                <textarea placeholder="Escribe el mensaje" type="text-" id="Mensaje" class="form-control" cols="30" rows="10"></textarea>
+
+              </div>
+            </div>
+            <div class="row">
+
+                <button onclick="success()" class="col-12 mb-5 mt-5" type="button">Mostrar Success</button>
+                <button onclick="mal()" class="col-12 mb-5" type="button">Mostrar Error</button>
+
+            </div>
+        </form>
     </div>
-
-    
-
-    <div class="container-fluid bg-success mt-5 fixed-bottom p-4">
+    <div class="mt-5 text-white">a</div>
+    <div class=" bg-success mt-5 fixed-bottom p-4">
         
         <div class="row">
             
