@@ -14,11 +14,11 @@
     <div class="accordion" id="miAcordeon">
         <div class="accordion-item">
             <h2 class="accordion-header">
-                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#elemento1" data-bs-parent="#miAcordeon" type="button">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#elemento1"  type="button">
                     Elemento 1
                 </button>
             </h2>
-            <div class="accordion-collapse collapse show" id="elemento1">
+            <div class="accordion-collapse collapse show" id="elemento1" data-bs-parent="#miAcordeon">
                 <div class="accordion-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas nihil eos laborum odit! Dolore magni deleniti nobis repellat obcaecati aut doloribus autem perspiciatis sunt, delectus similique, pariatur ipsum fuga.
                 </div>
@@ -30,7 +30,7 @@
                     Elemento 2
                 </button>
             </h2>
-            <div class="accordion-collapse collapse show" id="elemento2">
+            <div class="accordion-collapse collapse" id="elemento2" data-bs-parent="#miAcordeon">
                 <div class="accordion-body">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas nihil eos laborum odit! Dolore magni deleniti nobis repellat obcaecati aut doloribus autem perspiciatis sunt, delectus similique, pariatur ipsum fuga.
                 </div>
